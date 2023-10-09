@@ -26,7 +26,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <SiYourtraveldottv />
           </Link>
           <div className="menu-icon" onClick={handleClick}>

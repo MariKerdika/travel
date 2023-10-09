@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SiYourtraveldottv } from "react-icons/si";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
@@ -18,6 +18,9 @@ const Navbar = () => {
       setButton(true);
     }
   };
+  useEffect(() => {
+    showButton();
+  }, []);
   window.addEventListener("resize", showButton);
   return (
     <>

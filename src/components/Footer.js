@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./Button";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { SiYourtraveldottv } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -66,8 +67,8 @@ const Footer = () => {
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <Link to="/" className="social-logo">
-              trvl <i className="fab fa-typo3" />
+            <Link to="/" className="navbar-logo">
+              <SiYourtraveldottv />
             </Link>
           </div>
           <small className="website-rights">trvl c 2020</small>
